@@ -15,5 +15,12 @@ RUN sudo ./install
 RUN cd ..
 RUN git clone https://github.com/societyserver/sTeam-web-interface-gsoc-2015.git
 RUN cd sTeam-web-interface-gsoc-2015
+RUN npm install
+RUN cd ..
+RUN git clone https://github.com/societyserver/steam-rest.git
+RUN cd steam-rest
+RUN npm install
+RUN cd ..
+
 
 
