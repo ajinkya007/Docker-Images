@@ -8,4 +8,12 @@ RUN npm install -g npm bower gulp coffee-script jasmine-node frisby
 RUN cd home
 RUN wget -c https://raw.githubusercontent.com/societyserver/sTeam/steam-package$
 RUN git clone www.github.com/societyserver/steam.git
+RUN cd sTeam
+RUN git checkout societyserver-source
+RUN ./build
+RUN sudo ./install
+RUN cd ..
+RUN git clone https://github.com/societyserver/sTeam-web-interface-gsoc-2015.git
+RUN cd sTeam-web-interface-gsoc-2015
+
 
